@@ -25,40 +25,40 @@ git rebase --continue
 # once finished, change the commit msg 
 
 
-git log | less 				# shows a more organized commit log ?
+git log | less 				// shows a more organized commit log ?
 
 git checkout [your branch]	
-git push origin [your branch]		# probably will fail, so run
-git push origin [your branch] -f
-==========================================================================
-# same stuff as above
+git push origin [your branch]		// probably will fail, so run
+
+// same stuff as above
 git checkout dev
 git pull origin dev
 git checkout [your branch]
 git rebase dev -i
-git push origin [your branch] -f
-==========================================================================
-# normal stuff to commit n push
+
+// normal stuff to commit n push
 git add .
 git commit -m 'message'
 git push origin [your branch] -f
-==========================================================================
+
 # to rollback to previous commit
 git log | less		// will show shorter log, copy the hash for the commit you WANT
 git reset --hard [commit hash]
 git log 		// to check, should have latest commit = hash commit
-==========================================================================
+
 # cancel the previous commit 
 git reset --soft HEAD~1
-==========================================================================
-git rebase -i HEAD~3 	// rebase the last 3 commits
-# pick, squash, squash
+
+# rebase the last 3 commits 
+git rebase -i HEAD~3 	
+// pick, squash, squash
 git push -f
-==========================================================================
+
 # to fetch latest commit (if theres new changes from someone else on your branch)
 git fetch
 git merge
-==========================================================================
+
+
 # will update to the latest commit, change commit msg
 git add .
 git commit . --amend 	
