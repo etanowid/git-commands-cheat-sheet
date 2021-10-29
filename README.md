@@ -62,3 +62,24 @@ git merge <br/>
 # will update to the latest commit, change commit msg
 git add . <br/>
 git commit . --amend 	 <br/>
+<br>
+<br>
+
+# Create a new repository at github.com. (my own repository)
+Don't initialize it with a README, .gitignore, or license. <br>
+<br>
+Clone the other repository to your local machine. <br>
+`git clone https://github.com/other-account/other-repository.git` 
+<br>
+<br>
+Rename the local repository's current 'origin' to 'upstream'.<br>
+`git remote rename origin upstream` 
+<br>
+<br>
+Give the local repository an 'origin' that points to your repository.<br>
+`git remote add origin https://github.com/my-account/my-repository.git`
+<br>
+<br>
+Push the local repository to your repository on github. <br>
+`git push origin master`
+<br>
