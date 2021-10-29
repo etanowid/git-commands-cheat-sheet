@@ -12,12 +12,12 @@ git commands cheat sheet
 `git checkout [your branch]` <br/>
 `git rebase dev -i` 	# squash all the commits into 1 <br/>
 
-// (use reword "r" for the first one, the rest of the commits use "f") <br/>
+// (use reword **r** for the first one, the rest of the commits use **f**) <br/>
 // change commit message later <br/>
 
-// will open a text file, rename the first one and f for the rest. to cancel ":q!" and run "git rebase --abort" <br/>
+// will open a text file, rename the first one and f for the rest. to cancel `:q!` and run `git rebase --abort` <br/>
 
-// if there's merge conflict, go to vscode, resolve it manually, save, click the + (same as running "git add") then go back to terminal and run "git rebase --continue"
+// if there's merge conflict, go to vscode, resolve it manually, save, click the + (same as running "git add") then go back to terminal and run `git rebase --continue`
 <br/>
 
 `git rebase --continue` <br/>
