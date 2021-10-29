@@ -64,7 +64,7 @@ git commands cheat sheet
 <br>
 <br>
 
-# Create a new repository at github.com. (my own repository)
+# Create copy of a repository on my own repository
 Don't initialize it with a README, .gitignore, or license. <br>
 <br>
 Clone the other repository to your local machine. <br>
