@@ -85,5 +85,7 @@ Push the local repository to your repository on github. <br>
 <br>
 
 # get the remote branch in local. creates local branch which tracks remote branch
-git fetch
-git branch --track <branchNameonGithub> <origin/localbranch>
+`git fetch` <br>
+`git branch --track <branchNameonGithub> <origin/localbranch>`
+<br>
+<br>
