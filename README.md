@@ -82,3 +82,8 @@ Give the local repository an 'origin' that points to your repository.<br>
 Push the local repository to your repository on github. <br>
 `git push origin master`
 <br>
+<br>
+
+# get the remote branch in local. creates local branch which tracks remote branch
+git fetch
+git branch --track <branchNameonGithub> <origin/localbranch>
