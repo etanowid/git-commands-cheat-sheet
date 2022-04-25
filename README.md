@@ -113,9 +113,9 @@ If you are on the branch you want to rename: <br>
 If you are on a different branch: <br>
 `git branch -m old-name new-name` <br>
 Delete the old-name remote branch and push the new-name local branch: <br>
-`git push origin :old-name new-name`
+`git push origin :old-name new-name` <br>
 Reset the upstream branch for the new-name local branch: <br>
-Switch to the branch and then:
+Switch to the branch and then: <br>
 `git push origin -u new-name`
 
 
