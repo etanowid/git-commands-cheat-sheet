@@ -103,4 +103,19 @@ Push the local repository to your repository on github. <br>
 `git stash` (saves changes in vscode locally) <br>
 `git checkout -b subtask/blah/blah` <br>
 `git stash apply` (put the saved changes in the new subtask branch) <br>
+<br>
+<br>
+
+# change naming
+Rename your local branch: <br>
+If you are on the branch you want to rename: <br>
+`git branch -m new-name` <br>
+If you are on a different branch: <br>
+`git branch -m old-name new-name` <br>
+Delete the old-name remote branch and push the new-name local branch: <br>
+`git push origin :old-name new-name`
+Reset the upstream branch for the new-name local branch: <br>
+Switch to the branch and then:
+`git push origin -u new-name`
+
 
