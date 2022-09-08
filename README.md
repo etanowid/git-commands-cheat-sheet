@@ -117,5 +117,9 @@ Delete the old-name remote branch and push the new-name local branch: <br>
 Reset the upstream branch for the new-name local branch: <br>
 Switch to the branch and then: <br>
 `git push origin -u new-name`
+<br>
+<br>
 
+# revert changes not committed
+git checkout -- .
 
