@@ -125,14 +125,20 @@ Switch to the branch and then: <br>
 <br>
 <br>
 
+# force local checkpoint to point to remote checkpoint
+`git reset --hard origin/checkpoint`
+<br>
+<br>
+
 # reset where HEAD points
 `git reset --hard HEAD^` // head points to 1 previous commit on checkpoint <br>
 `git reset --hard HEAD^^` // head points to 2 previous commit on checkpoint <br>
-and so on...
+same with
+`git reset --hard HEAD~1`
 
 # creating new branch off of checkpoint
 `git checkout checkpoint` <br>
 `git pull` <br>
-`git checkout -b [new branch name]` <br>
+`git checkout -b [new branch name]` <br> 
 `git commit` <br>
 `git push` <br>
