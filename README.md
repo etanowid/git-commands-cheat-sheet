@@ -109,17 +109,30 @@ Push the local repository to your repository on github. <br>
 # change naming
 Rename your local branch: <br>
 If you are on the branch you want to rename: <br>
-`git branch -m new-name` <br>
+`git branch -m [new name]` <br>
 If you are on a different branch: <br>
-`git branch -m old-name new-name` <br>
+`git branch -m [old name] [new name]` <br>
 Delete the old-name remote branch and push the new-name local branch: <br>
-`git push origin :old-name new-name` <br>
+`git push origin :[old name] [new name]` <br>
 Reset the upstream branch for the new-name local branch: <br>
 Switch to the branch and then: <br>
-`git push origin -u new-name`
+`git push origin -u [new name]`
 <br>
 <br>
 
 # revert changes not committed
-git checkout -- .
+`git checkout -- .` <br>
+<br>
+<br>
 
+# reset where HEAD points
+`git reset --hard HEAD^` // head points to 1 previous commit on checkpoint <br>
+`git reset --hard HEAD^^` // head points to 2 previous commit on checkpoint <br>
+and so on...
+
+# creating new branch off of checkpoint
+`git checkout checkpoint` <br>
+`git pull` <br>
+`git checkout -b [new branch name]` <br>
+`git commit` <br>
+`git push` <br>
