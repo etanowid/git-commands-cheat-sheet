@@ -134,7 +134,20 @@ Switch to the branch and then: <br>
 `git reset --hard HEAD^` // head points to 1 previous commit on checkpoint <br>
 `git reset --hard HEAD^^` // head points to 2 previous commit on checkpoint <br>
 same with
-`git reset --hard HEAD~1`
+`git reset --hard HEAD~1` <br>
+<br>
+<br>
+
+
+# uncommit, but leave everything else intact
+`git reset --soft HEAD^` <br>
+# uncommit and unstaged
+`git reset HEAD^` <br>
+# throw away all uncommitted changes, reset everything to previous commit
+`git reset --hard HEAD^` <br>
+<br>
+<br>
+
 
 # creating new branch off of checkpoint
 `git checkout checkpoint` <br>
