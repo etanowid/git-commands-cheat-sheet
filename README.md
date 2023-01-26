@@ -98,11 +98,19 @@ Push the local repository to your repository on github. <br>
 <br>
 <br>
 
-# want to move changes from dev to subtask branch
+# want to move local changes from dev to subtask branch
 `git fetch`<br>
 `git stash` (saves changes in vscode locally) <br>
 `git checkout -b subtask/blah/blah` <br>
 `git stash apply` (put the saved changes in the new subtask branch) <br>
+<br>
+<br>
+
+# want to stash local changes and pull from another branch
+`git stash` (saves changes in current branch locally) <br>
+`git checkout [whatever branch]` <br>
+`git pull` <br>
+`git stash pop` (in subtask branch, put the stashed changes in current branch im on) <br>
 <br>
 <br>
 
