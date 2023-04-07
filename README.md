@@ -51,9 +51,8 @@ git commands cheat sheet
 `git log | less`		// will show shorter log, copy the hash for the commit you WANT <br/>
 `git reset --hard [commit hash]` <br>
 `git log` 		// to check, should have latest commit = hash commit <br>
-
-# cancel the previous commit 
-`git reset --soft HEAD~1` <br>
+<br>
+<br>
 
 # rebase the last 3 commits 
 `git rebase -i HEAD~3` 	 <br>
@@ -159,7 +158,8 @@ same with
 <br>
 <br>
 
-
+# cancel the previous commit 
+`git reset --soft HEAD~1` <br>
 # uncommit, but leave everything else intact
 `git reset --soft HEAD^` <br>
 # uncommit and unstaged
