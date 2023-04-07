@@ -143,6 +143,8 @@ Switch to the branch and then: <br>
 `git cherry-pick <next commit hash from branch A>`
 `git commit -m 'message'`
 `git push`
+<br>
+<br>
 
 # force local checkpoint to point to remote checkpoint
 `git reset --hard origin/checkpoint`
