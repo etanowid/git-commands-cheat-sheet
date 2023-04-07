@@ -133,6 +133,17 @@ Switch to the branch and then: <br>
 <br>
 <br>
 
+# cherry-pick
+// added commits and pushed on branch A
+`git checkout master`
+`git checkout -b 'new branch B'`
+`git cherry-pick <commit hash from any branch u want in this case, A>`
+// new branch B will have the commits on branch A
+// if need multiple commits from branch A 
+`git cherry-pick <next commit hash from branch A>`
+`git commit -m 'message'`
+`git push`
+
 # force local checkpoint to point to remote checkpoint
 `git reset --hard origin/checkpoint`
 <br>
