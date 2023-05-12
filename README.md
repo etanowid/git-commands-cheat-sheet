@@ -113,6 +113,14 @@ Push the local repository to your repository on github. <br>
 <br>
 <br>
 
+# simple stash and pop
+`git stash` (saves changes in current branch locally) <br>
+`git checkout [whatever branch]` <br>
+`git stash pop` (in subtask branch, put the stashed changes in current branch im on) <br>
+can do `git stash list` and pop using index `git stash pop 1`
+<br>
+<br>
+
 # change naming
 Rename your local branch: <br>
 If you are on the branch you want to rename: <br>
@@ -176,3 +184,12 @@ same with
 `git checkout -b [new branch name]` <br> 
 `git commit` <br>
 `git push` <br>
+<br>
+<br>
+
+# if want to pull someone else’s feature branch 
+`git fetch origin edriana-branch:edriana-branch` <br>
+# If you want to continue working after they pushed 
+`git pull origin edriana-branch`
+<br>
+<br>
