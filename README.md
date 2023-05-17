@@ -226,7 +226,7 @@ If you cool a change that you'd later like to revert, can revert your changes <b
 In circumstances where you would like to revert a single file (e.g., there's a merge conflict with the master branch and you'd like to merge in the entire new file and then re-add your changes; you change your mind about a single file and replacing via copy-paste from an older version seems risky), follow these steps: <br>
 
 `git log path/to/file` <br>
-This will display the log of commit changes to the file in question; find the commit hash for a prior commit that contains the version of the file you would like to revert to (typically the commit just prior to your first commit in your current branch) - the hash will be displayed in yellow font.
+This will display the log of commit changes to the file in question; find the commit hash for a prior commit that contains the version of the file you would like to revert to (typically the commit just prior to your first commit in your current branch) - the hash will be displayed in yellow font. <br>
 `git checkout <commit hash> path/to/file` <br>
 `git commit -m "<message>"` <br>
 <br>
