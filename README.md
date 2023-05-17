@@ -193,6 +193,7 @@ same with
 `git pull origin edriana-branch`
 <br>
 <br>
+<br>
 
 # Merge the Latest Master Branch into a Local Branch
 Occasionally, a change can occur in the master branch that you'd like to incorporate into your local branch. can merge the remote master branch directly into your local branch <br>
@@ -221,6 +222,8 @@ If you cool a change that you'd later like to revert, can revert your changes <b
 `git checkout -b "new_branch_name"` <br>
 `git revert <sha1 hash>` where sha1 hash is the 7-character alphanumeric code next to the very last commit in your original PR prior to the bot closed this comment (it will look something like "64d4b93") <br>
 `git push` and then open a new PR, which will contain changes to undo your original PR. <br>
+<br>
+<br>
 
 # Revert Changes/Commits for a Single File from a Branch
 In circumstances where you would like to revert a single file (e.g., there's a merge conflict with the master branch and you'd like to merge in the entire new file and then re-add your changes; you change your mind about a single file and replacing via copy-paste from an older version seems risky), follow these steps: <br>
