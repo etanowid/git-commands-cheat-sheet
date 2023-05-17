@@ -193,3 +193,41 @@ same with
 `git pull origin edriana-branch`
 <br>
 <br>
+
+# Merge the Latest Master Branch into a Local Branch
+Occasionally, a change can occur in the master branch that you'd like to incorporate into your local branch. can merge the remote master branch directly into your local branch <br>
+
+`git status` to confirm you're own your local branch <br>
+`git pull origin master` <br>
+Unlike other pulls, this command is actually pulling in the master branch, merging it with your branch, and then committing that change to your local branch - a commit message will be auto-generated when you run the command. <br>
+To accept the commit message (which will appear in a Terminal text editor), type :wq and then Return to save and quit the text editor.
+<br>
+<br>
+
+# Reset the Local Master Branch
+If you accidentally commit changes to the master branch, can reset your master branch as follows <br>
+
+`git status` to ensure you're on the master branch <br>
+`git fetch origin` <br>
+`git reset --hard origin/master` <br>
+<br>
+<br>
+
+# Revert a cooled PR
+If you cool a change that you'd later like to revert, can revert your changes <br>
+
+`git checkout master` <br>
+`git pull` to ensure you have the latest master branch <br>
+`git checkout -b "new_branch_name"` <br>
+`git revert <sha1 hash>` where sha1 hash is the 7-character alphanumeric code next to the very last commit in your original PR prior to the bot closed this comment (it will look something like "64d4b93") <br>
+`git push` and then open a new PR, which will contain changes to undo your original PR. <br>
+
+# Revert Changes/Commits for a Single File from a Branch
+In circumstances where you would like to revert a single file (e.g., there's a merge conflict with the master branch and you'd like to merge in the entire new file and then re-add your changes; you change your mind about a single file and replacing via copy-paste from an older version seems risky), follow these steps: <br>
+
+`git log path/to/file` <br>
+This will display the log of commit changes to the file in question; find the commit hash for a prior commit that contains the version of the file you would like to revert to (typically the commit just prior to your first commit in your current branch) - the hash will be displayed in yellow font.
+`git checkout <commit hash> path/to/file` <br>
+`git commit -m "<message>"` <br>
+<br>
+<br>
