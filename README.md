@@ -177,6 +177,17 @@ same with
 <br>
 <br>
 
+# if someone push a change to remote, and u want to fetch
+`git fetch origin person1/zstd-compress` <br>
+`git checkout person1/zstd-compress` <br>
+`git reset head~1` <br> Shows Unstaged changes after reset
+`git checkout master`<br>
+`git checkout -b me/zstd-compression` <br>
+`git add .` <br>
+`git commit -m 'init'` <br>
+`git push`<br>
+<br>
+<br>
 
 # creating new branch off of checkpoint
 `git checkout checkpoint` <br>
