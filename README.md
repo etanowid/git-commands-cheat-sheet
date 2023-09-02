@@ -54,6 +54,12 @@ git commands cheat sheet
 <br>
 <br>
 
+# to cancel previous push
+`git reset --hard HEAD@{1}`		// will move head to previous commit, then push<br/>
+`git push -f` <br>
+<br>
+<br>
+
 # rebase the last 3 commits 
 `git rebase -i HEAD~3` 	 <br>
 // pick, squash, squash <br>
