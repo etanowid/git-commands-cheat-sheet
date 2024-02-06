@@ -165,23 +165,18 @@ Switch to the branch and then: <br>
 <br>
 
 # reset where HEAD points
-`git reset --hard HEAD^` // head points to 1 previous commit on checkpoint <br>
+`git reset --hard HEAD^` // head points to 1 previous commit on checkpoint. throw away all uncommitted changes, reset everything to previous commit <br>
 `git reset --hard HEAD^^` // head points to 2 previous commit on checkpoint <br>
 same with
 `git reset --hard HEAD~1` <br>
 <br>
 <br>
 
-# cancel the previous commit 
+# cancel the previous commit (uncommit), but leave everything else intact
 `git reset --soft HEAD~1` <br>
-# uncommit, but leave everything else intact
-`git reset --soft HEAD^` <br>
 # uncommit and unstaged
 `git reset HEAD^` <br>
-# throw away all uncommitted changes, reset everything to previous commit
-`git reset --hard HEAD^` <br>
-<br>
-<br>
+
 
 # if someone push a change to remote, and u want to fetch
 `git fetch origin person1/zstd-compress` <br>
