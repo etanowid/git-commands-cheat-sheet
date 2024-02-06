@@ -181,7 +181,7 @@ same with
 # if someone push a change to remote, and u want to fetch
 `git fetch origin person1/zstd-compress` <br>
 `git checkout person1/zstd-compress` <br>
-`git reset head~1` <br> Shows Unstaged changes after reset
+`git reset head~1` // Shows Unstaged changes after reset <br>
 `git checkout master`<br>
 `git checkout -b me/zstd-compression` <br>
 `git add .` <br>
