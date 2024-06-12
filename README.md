@@ -207,6 +207,15 @@ same with
 <br>
 <br>
 
+# cherry-pick branch for late branch promo
+`git add .` <br>
+`git fetch origin 12.90-phantom:12.90-phantom` <br>
+`git checkout 12.90-phantom` <br>
+`git cherry-pick [your change]` <br>
+`git checkout -b [your new branch]` <br>
+<br>
+<br>
+
 # Merge the Latest Master Branch into a Local Branch
 Occasionally, a change can occur in the master branch that you'd like to incorporate into your local branch. can merge the remote master branch directly into your local branch <br>
 
