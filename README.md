@@ -12,6 +12,16 @@ git commands cheat sheet
 <br>
 <br>
 
+# squash without rebasing
+## commit any working changes on branch "mybranchname", then...
+`git checkout master`<br>
+`git checkout -b featurebranch`<br>
+`git merge --squash tempfeaturebranch`<br>
+`git commit -am "squashed commits from featurebranch"`<br>
+`git push`<br>
+<br>
+<br>
+
 # rebase
 `git branch` 		// shows all branches <br>
 `git checkout dev` <br>
