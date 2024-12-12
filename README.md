@@ -210,7 +210,9 @@ same with
 <br>
 
 # if want to pull someone else’s feature branch 
+can start on master branch
 `git fetch origin edriana-branch:edriana-branch` <br>
+`git checkout edriana-branch`
 # If you want to continue working after they pushed 
 `git pull origin edriana-branch`
 <br>
