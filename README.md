@@ -39,7 +39,7 @@ git commands cheat sheet
 
 `git rebase --continue` <br>
 
-## once finished, change the commit msg 
+### once finished, change the commit msg 
 
 `git log | less` 				// shows a more organized commit log ? <br>
 
@@ -56,6 +56,17 @@ git commands cheat sheet
 `git add .` <br/>
 `git commit -m 'message'` <br/>
 `git push origin [your branch] -f` <br>
+
+# rebase to remove specific commit
+In the scenario that I want to remove a commit on a weekly release deployment branch
+`git checkout gke`
+`git pull`
+`git checkout [existing-branch-2024-12-17]` # this is the branch that has the commit to be removed. now has 3 commits.
+`git log -4` # copy the most bottom commit hash
+`git rebase -i [commit-hash]` # will open the rebase editor, delete the entire line of the commit to remove, then save.
+`git push -f --set-upstream origin [existing-branch-2024-12-17]`
+Check the PR, it will now have 2 commits only
+
 
 # to rollback to previous commit
 `git log | less`		// will show shorter log, copy the hash for the commit you WANT <br/>
