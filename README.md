@@ -62,7 +62,7 @@ In the scenario that I want to remove a commit on a weekly release deployment br
 `git checkout gke`
 `git pull`
 `git checkout [existing-branch-2024-12-17]` # this is the branch that has the commit to be removed. now has 3 commits.
-`git log -4` # copy the most bottom commit hash
+`git log -4` # copy the most bottom commit hash, this will give you all current branch's commits prior to this hash
 `git rebase -i [commit-hash]` # will open the rebase editor, delete the entire line of the commit to remove, then save.
 `git push -f --set-upstream origin [existing-branch-2024-12-17]`
 Check the PR, it will now have 2 commits only
