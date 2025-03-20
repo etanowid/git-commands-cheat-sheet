@@ -85,6 +85,13 @@ Check the PR, it will now have 2 commits only
 <br>
 <br>
 
+# to cancel git commit --amend
+if accidentally committing to the previous commit but need to keep the 2 commits separate<br>
+https://stackoverflow.com/questions/1459150/how-to-undo-git-commit-amend-done-instead-of-git-commit<br>
+`git reset --soft HEAD@{1}`
+<br>
+<br>
+
 # rebase the last 3 commits 
 `git rebase -i HEAD~3` 	 <br>
 // pick, squash, squash <br>
